@@ -26,13 +26,20 @@ class ContactController extends Controller
      */
     public function create(Request $request)
     {
+        $validatedData = $request->validate([
+            'name' => ['required'],
+            'email' => ['required'],
+            'message' => ['required'],
+        ]);
+
+
         $contact =  new Contact();
         $contact->name = $request->name;
-        $contact->text = $request->text;
         $contact->email = $request->email;
+        $contact->message = $request->message;
         $contact->save();
 
-        return redirect('/')->with('status', 'Profile updated!');
+        return redirect('/')->with('status', 'Message Sent!');
     }
 
     /**
