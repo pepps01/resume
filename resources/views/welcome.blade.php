@@ -76,6 +76,13 @@
                         </div>
                     @endif
 
+
+                         @if(Session::has('success'))
+                            <div class="alert alert-success">
+                                {{Session::get('success')}}
+                            </div>
+                        @endif
+
                     <h3 class="mt-3 mb-2">About Me</h3>
                     <p>
                          I am passionate about my work. Because I love what I do, I have a steady source of motivation that drives me to do my best.

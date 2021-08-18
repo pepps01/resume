@@ -26,20 +26,38 @@ class ContactController extends Controller
      */
     public function create(Request $request)
     {
-        $validatedData = $request->validate([
-            'name' => ['required'],
-            'email' => ['required'],
-            'message' => ['required'],
-        ]);
+        // $validatedData = $request->validate([
+        //     'name' => ['required'],
+        //     'email' => ['required'],
+        //     'message' => ['required'],
+        // ]);
 
 
-        $contact =  new Contact();
-        $contact->name = $request->name;
-        $contact->email = $request->email;
-        $contact->message = $request->message;
-        $contact->save();
+        // $contact =  new Contact();
+        // $contact->name = $request->name;
+        // $contact->email = $request->email;
+        // $contact->message = $request->message;
+        // $contact->save();
 
-        return redirect('/')->with('status', 'Message Sent!');
+        // return redirect('/')->with('status', 'Message Sent!');
+
+
+        // Form validation
+        $this->validate($request, [
+            'name' => 'required',
+            'email' => 'required',
+            'message' => 'required'
+         ]);
+
+        //  Store data in database
+                $contact =  new Contact();
+                $contact->name = $request->name;
+                $contact->email = $request->email;
+                $contact->message = $request->message;
+                $contact->save();
+
+        // 
+        return back()->with('success', 'We have received your message and would like to thank you for writing to us.');
     }
 
     /**
