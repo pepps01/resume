@@ -107,7 +107,8 @@ label {
         <div class="row">
             <div class="col-md-3 sidebar mb-5">
                 <img src="{{asset('images/pepple.jpeg')}}" class="image-container mb-2 mt-5" style="max-width:200px; width:100%; margin:auto; display:block; border-radius: 150px;" />
-                <h4 class="main-work mb-5">Pepple Sunny</h4>
+                <h4 class="main-work mb-3">Pepple Sunny</h4>
+                <p class=" main-work mb-5">Backend Developer</p>
                 <!-- Button trigger modal -->
                     <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal" style="max-width:200px; width:100%; margin:auto; display:block;">
                     Contact Me!
