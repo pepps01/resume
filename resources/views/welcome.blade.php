@@ -203,7 +203,7 @@ label {
                            <a href="https://aura.transcorphotels.com"><img src="{{asset('/images/aura.png')}}" /></a>
                        </div>
                         <div>
-                           <a href=""><img src="{{asset('/images/microsoft.png')}}" class="project-controller"/></a>
+                           <a href="https://www.cloudspacetechs.com/"><img src="{{asset('/images/cloudspecs.png')}}" class="project-controller"/></a>
                        </div>
                    </div>
                 </div>
