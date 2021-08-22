@@ -93,6 +93,10 @@ label {
     border-color: red;
     padding: 0.375rem 0.75rem;
 }
+
+.project-controller{
+    height:300px;
+}
         </style>
   </head>
   <body>
@@ -146,7 +150,7 @@ label {
                     
             </div>
             <div class="col-md-9 main-area px-5">
-                <div class="container mb-3">
+                <div class="container mb-5">
                     
                     @if ($errors->any())
                         <div class="alert alert-danger">
@@ -176,8 +180,8 @@ label {
                          to showcase my skills and build more confidence in backend development and enjoy working relationships with fellow interns. Below gives strong reasons for what I plan to achieve at the end of the Internship. 
                 </p>
                 </div>
-                <div class="container mb-3" >
-                    <h3 class="mb-2">My Services</h3>
+                <div class="container mb-5" >
+                    <h3 class="mb-5">My Services</h3>
                     <div class="services">
                         <div>
                             <img src="{{asset('/images/laravel.png')}}">
@@ -193,7 +197,7 @@ label {
                         </div>
                     </div>
                 </div>
-                <div class="container mb-3">
+                <div class="container mb-5">
                     <h3 class="mb-2">My Projects</h1>
                    <div class="projects">
                        <div>
